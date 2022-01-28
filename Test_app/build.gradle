@@ -3,6 +3,9 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://slabs-yieldlove-ad-integration.s3.eu-central-1.amazonaws.com/android' }
+        jcenter()
+        maven { url 'https://maven.google.com' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.4"
