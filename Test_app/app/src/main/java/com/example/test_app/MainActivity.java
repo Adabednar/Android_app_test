@@ -43,4 +43,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void Side2(View v) {
+        Intent i=new Intent(this, SideActivity.class);
+        startActivity(i);
+    }
+
 }
