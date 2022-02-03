@@ -10,32 +10,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.yieldlove.adIntegration.Yieldlove;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    public void disable(View v) {
-        v.setEnabled(false);
-        Button button=(Button)v;
-        button.setText("You fool!");
-    }
-
-    public void changeText(View v) {
-        TextView t=findViewById(R.id.hello);
-        t.setText("You changed the message!");
-        v.setEnabled(false);
-        Button button=(Button)v;
-        button.setText("Done");
-    }
-
-    public void copyText(View v) {
-        EditText t=findViewById(R.id.source1);
-        String input=t.getText().toString();
-        ((TextView)findViewById(R.id.output1)).setText(input);
+        Yieldlove.setApplicationName("appDfpTest");
     }
 
     public void launchSettings(View v) {
@@ -43,8 +26,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void Side2(View v) {
+    public void Side(View v) {
         Intent i=new Intent(this, SideActivity.class);
+        startActivity(i);
+    }
+
+    public void Side2(View v) {
+        Intent i=new Intent(this, SideActivity2.class);
+        startActivity(i);
+    }
+
+    public void Side3(View v) {
+        Intent i = new Intent(this, SideActivity3.class);
         startActivity(i);
     }
 

@@ -22,7 +22,6 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        Yieldlove.setApplicationName("appDfpTestCMP");
         YieldloveConsent consent = new YieldloveConsent(
                 this,
                 R.id.Settings);
