@@ -25,8 +25,6 @@ public class SideActivity extends AppCompatActivity {
     }
 
     public void showInterstitialAd() {
-        Yieldlove.setApplicationName("appDfpTestCMP");
-
         YieldloveConsent consent = new YieldloveConsent(
                 this,
                 R.id.sideA);
@@ -70,6 +68,10 @@ public class SideActivity extends AppCompatActivity {
         } catch (YieldloveException exception) {
 
         }
+    }
+
+    public void InterAdd(View v){
+        showInterstitialAd();
     }
 
 
