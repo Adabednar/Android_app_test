@@ -25,11 +25,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginEnd="291dp"
-        android:layout_marginBottom="103dp"
+        android:layout_marginBottom="100dp"
         android:onClick="launchSettings"
         android:text="Settings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -39,7 +40,7 @@
         android:layout_marginStart="146dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="102dp"
-        android:onClick="Side2"
+        android:onClick="Side"
         android:text="AdTest"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,13 +50,22 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="430dp"
-        android:onClick="Side3"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="133dp"
+        android:onClick="Side2"
         android:text="Addition"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="38dp"
+        android:onClick="Side3"
+        android:text="Array"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

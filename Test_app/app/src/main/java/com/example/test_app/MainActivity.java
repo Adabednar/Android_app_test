@@ -21,25 +21,23 @@ public class MainActivity extends AppCompatActivity {
         Yieldlove.setApplicationName("appDfpTest");
     }
 
-
-    /*public void copyText(View v) {
-        EditText t=findViewById(R.id.source1);
-        String input=t.getText().toString();
-        ((TextView)findViewById(R.id.output1)).setText(input);
-    }*/
-
     public void launchSettings(View v) {
         Intent i=new Intent(this, SettingsActivity.class);
         startActivity(i);
     }
 
-    public void Side2(View v) {
+    public void Side(View v) {
         Intent i=new Intent(this, SideActivity.class);
         startActivity(i);
     }
 
-    public void Side3(View v) {
+    public void Side2(View v) {
         Intent i=new Intent(this, SideActivity2.class);
+        startActivity(i);
+    }
+
+    public void Side3(View v) {
+        Intent i = new Intent(this, SideActivity3.class);
         startActivity(i);
     }
 

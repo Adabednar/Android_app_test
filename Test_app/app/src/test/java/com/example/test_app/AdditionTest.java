@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class SideActivity2Test {
+public class AdditionTest {
 
     @Test
     public void IsAdditionCorrect() {
@@ -12,8 +12,8 @@ public class SideActivity2Test {
         int input2 = 321;
         int expected = 336;
 
-        SideActivity2 sideActivity2 = new SideActivity2();
-        int output = sideActivity2.add(input1, input2);
+        Addition addition = new Addition();
+        int output = addition.add(input1, input2);
 
         assertEquals(expected, output);
     }

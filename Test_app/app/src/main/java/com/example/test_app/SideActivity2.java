@@ -21,11 +21,6 @@ public class SideActivity2 extends AppCompatActivity {
         startActivity(i);
     }
 
-    public int add(int x, int y){
-        int i = x + y;
-        return i;
-    }
-
     public void Badder(View v) {
         EditText t1=findViewById(R.id.NumberX);
         EditText t2=findViewById(R.id.NumberY);
@@ -33,9 +28,10 @@ public class SideActivity2 extends AppCompatActivity {
         String e2=t2.getText().toString();
         int x = Integer.parseInt(e1);
         int y = Integer.parseInt(e2);
-        int r = add(x,y);
+        Addition a = new Addition();
+        int r = a.add(x, y);
         String result = Integer.toString(r);
-        ((TextView)findViewById(R.id.Result)).setText(result);
+        ((TextView)findViewById(R.id.ResultA)).setText(result);
 
     }
 }

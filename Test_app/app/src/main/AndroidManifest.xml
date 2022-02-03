@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test_app">
         <activity
+            android:name=".SideActivity3"
+            android:exported="false" />
+        <activity
             android:name=".SideActivity2"
             android:exported="false" />
         <activity
