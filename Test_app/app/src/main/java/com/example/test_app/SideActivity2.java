@@ -24,12 +24,16 @@ public class SideActivity2 extends AppCompatActivity {
     public void Badder(View v) {
         EditText t1=findViewById(R.id.NumberX);
         EditText t2=findViewById(R.id.NumberY);
+
         String e1=t1.getText().toString();
         String e2=t2.getText().toString();
+
         int x = Integer.parseInt(e1);
         int y = Integer.parseInt(e2);
+
         Addition a = new Addition();
         int r = a.add(x, y);
+
         String result = Integer.toString(r);
         ((TextView)findViewById(R.id.ResultA)).setText(result);
 
