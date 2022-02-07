@@ -4,20 +4,21 @@ import java.util.Random;
 
 public class OddArray {
 
-    public int ArrayOdds(int[] arr){
+    public int ArrayOddNumberSum(int[] arr){
         int result = 0;
-        int n = arr.length;
-        for(int i=0; i<n; i++){
-            if(arr[i] % 2 == 0){
-            } else { result = result + arr[i];}
+        int arraySize = arr.length;
+
+        for(int i=0; i<arraySize; i++){
+            if(!(arr[i] % 2 == 0)){result = result + arr[i];}
         }
         return result;
     }
 
-    public int[] RandomArray(int n){
-        int[] arr = new int[n];
+    public int[] RandomArray(int arraySize){
+        int[] arr = new int[arraySize];
         Random r = new Random();
-        for(int i=0;i<n;i++){
+
+        for(int i=0; i<arraySize; i++){
             arr[i] = r.nextInt(10000);
         }
         return arr;

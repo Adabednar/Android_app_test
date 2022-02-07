@@ -14,7 +14,7 @@ public class OddArrayTest {
         int expected = 158;
 
         OddArray oddArray = new OddArray();
-        int output = oddArray.ArrayOdds(arr);
+        int output = oddArray.ArrayOddNumberSum(arr);
 
         assertEquals(expected, output);
     }
@@ -25,7 +25,7 @@ public class OddArrayTest {
         int expected = 0;
 
         OddArray oddArray = new OddArray();
-        int output = oddArray.ArrayOdds(arr);
+        int output = oddArray.ArrayOddNumberSum(arr);
 
         assertEquals(expected, output);
     }
@@ -36,7 +36,7 @@ public class OddArrayTest {
         int expected = 0;
 
         OddArray oddArray = new OddArray();
-        int output = oddArray.ArrayOdds(arr);
+        int output = oddArray.ArrayOddNumberSum(arr);
 
         assertEquals(expected, output);
     }

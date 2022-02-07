@@ -33,7 +33,7 @@ public class SideActivity3 extends AppCompatActivity {
         String s2 = Arrays.toString(arr);
         t.setText(s2);
         TextView t2 = findViewById(R.id.ResultO);
-        int result = o.ArrayOdds(arr);
+        int result = o.ArrayOddNumberSum(arr);
         String s3 = Integer.toString(result);
         t2.setText(s3);
 
