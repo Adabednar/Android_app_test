@@ -27,13 +27,16 @@ public class SideActivity3 extends AppCompatActivity {
         TextView t = findViewById(R.id.ArrayView);
         OddArray o = new OddArray();
         EditText e = findViewById(R.id.ArraySize);
+
         String s1 = e.getText().toString();
-        int n = Integer.parseInt(s1);
-        int[] arr = o.RandomArray(n);
+        int arrayLength = Integer.parseInt(s1);
+
+        int[] arr = o.RandomArray(arrayLength); //výpis array
         String s2 = Arrays.toString(arr);
         t.setText(s2);
-        TextView t2 = findViewById(R.id.ResultO);
-        int result = o.ArrayOdds(arr);
+
+        TextView t2 = findViewById(R.id.ResultO); //výpis výsledku
+        int result = o.ArrayOddNumberSum(arr);
         String s3 = Integer.toString(result);
         t2.setText(s3);
 
