@@ -6,15 +6,15 @@ import android.os.Build;
 
 import org.junit.Test;
 
-public class OddArrayTest {
+public class TestArrayTest {
 
     @Test
     public void ArrayIsMixed() {
         int[] arr = {1,5,15,192,137,180};
         int expected = 158;
 
-        OddArray oddArray = new OddArray();
-        int output = oddArray.ArrayOddNumberSum(arr);
+        TestArray oddArray = new TestArray();
+        int output = oddArray.getSumOfOddNumbers(arr);
 
         assertEquals(expected, output);
     }
@@ -24,8 +24,8 @@ public class OddArrayTest {
         int[] arr = {};
         int expected = 0;
 
-        OddArray oddArray = new OddArray();
-        int output = oddArray.ArrayOddNumberSum(arr);
+        TestArray oddArray = new TestArray();
+        int output = oddArray.getSumOfOddNumbers(arr);
 
         assertEquals(expected, output);
     }
@@ -35,8 +35,8 @@ public class OddArrayTest {
         int[] arr = {2,6,18,192,138,180};
         int expected = 0;
 
-        OddArray oddArray = new OddArray();
-        int output = oddArray.ArrayOddNumberSum(arr);
+        TestArray oddArray = new TestArray();
+        int output = oddArray.getSumOfOddNumbers(arr);
 
         assertEquals(expected, output);
     }
