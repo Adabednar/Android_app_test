@@ -19,7 +19,7 @@ public class TestArray {
         int[] arr = new int[arraySize];
 
         for (int i=0; i<arraySize; i++) {
-            arr[i] = generateRandomNumbersUpTo10000();
+            arr[i] = generateRandomNumberUpTo10000();
         }
         return arr;
     }
@@ -29,7 +29,7 @@ public class TestArray {
         return remainderAfterDivision > 0;
     }
 
-    private int generateRandomNumbersUpTo10000 () {
+    private int generateRandomNumberUpTo10000 () {
         Random r = new Random();
         return r.nextInt(10000);
     }
